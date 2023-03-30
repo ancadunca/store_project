@@ -45,7 +45,9 @@ function Navigation() {
         </div>
 
         <div className="middle_logo">
-          <img alt="logo" src="/logo_store.svg" />
+          <Link to={"/home"}>
+            <img alt="logo" src="/logo_store.svg" />
+          </Link>
         </div>
 
         <div className="right_nav_links">

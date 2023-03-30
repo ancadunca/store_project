@@ -80,11 +80,13 @@ function Wishlist() {
                   <td>Total</td>
                   <td></td>
                   <td className="total_price">
-                    {wishlistProducts.reduce(
-                      (accumulator, currentValue) =>
-                        (accumulator = accumulator + currentValue.price),
-                      0
-                    ) + " $"}
+                    {wishlistProducts
+                      .reduce(
+                        (accumulator, currentValue) =>
+                          (accumulator = accumulator + currentValue.price),
+                        0
+                      )
+                      .toFixed(2) + " $"}
                   </td>
                   <td></td>
                 </tr>

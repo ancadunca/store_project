@@ -1,8 +1,8 @@
 .middle_logo img{
-    width: 160px;
+    max-width: 150px;
 }
 .navbar_store{
-    height: 8vh;
+    height: 10vh;
     width: 100vw;
     background-color: white;
     display: flex;
@@ -56,7 +56,7 @@
         
     }
     .navbar_store{
-        height: 16vh;
+        height: 18vh;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -69,6 +69,7 @@
     }
     .navbar_store a{
     font-size: 18px;
+    margin-top: 10px;
     }
     .right_nav_links,
     .left_nav_links{
