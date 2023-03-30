@@ -1,0 +1,42 @@
+.card-img-top {
+    min-width: 70%;
+    max-height: 25vh;
+    object-fit: scale-down;
+    padding: 30px;
+}
+
+.product_card{
+    min-height: 250px;
+    box-shadow: #797979 0px 3px 8px;
+    
+}
+.text_card{
+    min-height: 121px;
+    text-align: center;
+}
+
+.product_title{
+    font-size: 18px;
+}
+
+.price{
+    font-weight: bold;
+    font-size: 20px;
+    color: #B92727;
+}
+
+.wishlist_button{
+    align-self: flex-end;
+    background-color: transparent;
+    width: max-content;
+    border: 0;
+    font-size: 20px;
+    color: #D97A2B;
+}
+
+
+
+
+
+
+

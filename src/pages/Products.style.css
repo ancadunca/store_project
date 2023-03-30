@@ -1,0 +1,37 @@
+.container_products{
+    margin-top: 30px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+.category_list{
+    width: 15vw;
+}
+
+.categories_text{
+    margin-left: 12px;
+    color: #B92727;
+    font-size: 24px;
+}
+
+.search_icon{
+    filter: invert(54%) sepia(18%) saturate(1818%) hue-rotate(345deg) brightness(96%) contrast(90%);
+}
+
+.products_list{
+    width: 80%;
+    height: 100%;
+}
+
+@media (max-width:1000px){
+
+    .category_list,
+    .products_list{
+        width: 90vw;
+        margin: auto;
+    }
+ 
+    .container_products{
+        flex-direction: column;
+    }
+}

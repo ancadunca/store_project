@@ -1,0 +1,40 @@
+.category_container{
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.row_category{
+    margin:0;
+}
+.category_card{
+    max-width:300px; 
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.title_category{
+    color: #D97A2B;
+}
+
+.card_image{
+    max-width:100%; 
+    max-height: 270px;
+    object-fit: cover;
+}
+
+@media (max-width:800px){
+    .category_container{
+        max-width: 100%;
+    }
+    .category_card{
+        max-width:390px;  
+        max-height: 270px;
+    }
+    .card_image{
+        max-width:390px;  
+        max-height: 200px;
+
+    }
+    
+ }
