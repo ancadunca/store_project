@@ -5,14 +5,15 @@ import { useState, useEffect } from "react";
 function Navigation() {
   const [visibleAdd, setVisibleAdd] = useState(false);
   const [visibleDelete, setVisibleDelete] = useState(false);
-  const [wishlistItems, setWishListItems] = useState(
-    JSON.parse(localStorage.getItem("products"))
-  );
+  const [wishlistItems, setWishListItems] = useState("");
+
 
   const onDismissAdd = () => setVisibleAdd(false);
   const onDismissDelete = () => setVisibleDelete(false);
 
   useEffect(() => {
+    const numberWishlist = JSON.parse(localStorage.getItem("products"));
+    if (numberWishlist) setWishListItems(numberWishlist);
     window.addEventListener("localdataincreased", () => {
       const wishlistNumber = JSON.parse(
         window.localStorage.getItem("products")
